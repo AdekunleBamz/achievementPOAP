@@ -112,6 +112,9 @@
     (ok (var-get contract-paused))
 )
 
+(define-read-only (get-contract-owner)
+    (ok CONTRACT_OWNER))
+
 ;; Private functions
 
 (define-private (is-event-active (event-id uint))
